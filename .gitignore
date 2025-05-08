@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log
+dist/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.dump
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
