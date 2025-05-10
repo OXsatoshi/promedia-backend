@@ -2,7 +2,7 @@ const request = require("supertest");
 const app = require("../../src/app");
 const db = require("../../src/db/client");
 
-describe("POST /login", () => {
+describe("POST /auth/login", () => {
   beforeAll(async () => {
     await db.query(
       `INSERT INTO users (username, password_hash)
@@ -30,3 +30,4 @@ describe("POST /login", () => {
     expect(res.statusCode).toBe(401);
   });
 });
+ 
